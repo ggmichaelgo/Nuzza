@@ -32,6 +32,12 @@ body
 	background-attachment: fixed;
 }
 
+@font-face
+{
+	font-family: 'LeckerliOne-Regular';
+	src: url(<%= asset_path 'LeckerliOne-Regular.otf' %>);
+}
+
 .zone
 {
 	width: 100%;

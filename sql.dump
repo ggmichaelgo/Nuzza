@@ -1,0 +1,163 @@
+-- MySQL dump 10.13  Distrib 5.5.29, for osx10.6 (i386)
+--
+-- Host: localhost    Database: nuzza_dev
+-- ------------------------------------------------------
+-- Server version	5.5.29
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO,POSTGRESQL' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table "articles"
+--
+
+DROP TABLE IF EXISTS "articles";
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE "articles" (
+  "id" int(11) NOT NULL,
+  "title" varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  "content" text COLLATE utf8_unicode_ci,
+  "source" text COLLATE utf8_unicode_ci,
+  "sub_category_id" int(11) DEFAULT NULL,
+  "created_at" datetime NOT NULL,
+  "updated_at" datetime NOT NULL,
+  "summary" text COLLATE utf8_unicode_ci,
+  "icon" text COLLATE utf8_unicode_ci,
+  PRIMARY KEY ("id")
+);
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table "articles"
+--
+
+LOCK TABLES "articles" WRITE;
+/*!40000 ALTER TABLE "articles" DISABLE KEYS */;
+INSERT INTO "articles" VALUES (1,'Family of a plane crash victims come together','\n<p>\n	<em>Thousands volunteer to help five-year-old leukaemia patient battle The Riddler and Penguin on a day of realised dreams</em>\n</p>\n<p>\n	<em><br />\n	</em>\n</p>\n	<img src=\"http://static.guim.co.uk/sys-images/Guardian/Pix/pictures/2013/11/15/1384546934303/bd2f4d1a-871e-4074-9dd2-4468cefb3a0f-460x276.jpeg\"><br />\n	<span style=\"color: rgb(119, 119, 119); font-style: italic;\">\n	Miles Scott, dressed as Batkid, right, runs with Batman after saving<br />\n	a damsel in distress in San Francisco. Photograph: Jeff Chiu/AP<br />\n	</span>\n</br>\n<p>\n	San Francisco was beset by a wave of crime on Friday, as a woman was taken hostage\n</p>\n<p>\n	and tied to cable car tracks, a criminal calling himself the Riddler attempted to rob a bank vault, and\n</p>\n<p>\n	a miscreant known as Penguin generally made a nuisance of himself in the downtown area.\n</p>\n<p>\n	Happily, each incident was staged: an attempt on the part the charity Make-a-Wish to\n</p>\n<p>\n	give five-year-old Miles Scott, who is recovering from leukaemia, a memorable day assisting his favourite superhero.\n</p>\n<p>\n	<img src=\"https://pbs.twimg.com/media/BZIoetTCMAE0XR0.jpg\" style=\"width: 350px;\">\n</p>\n<p>\n	<span style=\"color: rgb(119, 119, 119); font-style: italic;\">             Damsel played the role quite well...she waited a long time </span>\n</p>\n<blockquote>\n	<br />\n</blockquote>\n<p>\n	<img src=\"https://pbs.twimg.com/media/BZIvBPsCYAEO3Lr.jpg\" style=\"width: 350px;\">\n</p>\n<p>\n	<span style=\"color: rgb(119, 119, 119); font-style: italic;\">            Hot off the presses! </span><a href=\"https://twitter.com/search?q=%23sfbatkid&amp;src=hash\" style=\"font-style: italic;\">#sfbatkid</a><span style=\"color: rgb(119, 119, 119); font-style: italic;\"> catches riddler robbing Gotham bank</span>\n</p>\n',NULL,2,'2013-11-17 01:50:35','2013-11-17 01:50:35','UTA Flight 772 was a scheduled flight operating from Brazzaville in the Republic of Congo to Paris CDG airport in France','http://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Map_of_UTA_Flight_772.jpg/200px-Map_of_UTA_Flight_772.jpg'),(2,'Riverview High School YIA team raise 3M to support Philippines','\n<p>\n	<em>Thousands volunteer to help five-year-old leukaemia patient battle The Riddler and Penguin on a day of realised dreams</em>\n</p>\n<p>\n	<em><br />\n	</em>\n</p>\n	<img src=\"http://static.guim.co.uk/sys-images/Guardian/Pix/pictures/2013/11/15/1384546934303/bd2f4d1a-871e-4074-9dd2-4468cefb3a0f-460x276.jpeg\"><br />\n	<span style=\"color: rgb(119, 119, 119); font-style: italic;\">\n	Miles Scott, dressed as Batkid, right, runs with Batman after saving<br />\n	a damsel in distress in San Francisco. Photograph: Jeff Chiu/AP<br />\n	</span>\n</br>\n<p>\n	San Francisco was beset by a wave of crime on Friday, as a woman was taken hostage\n</p>\n<p>\n	and tied to cable car tracks, a criminal calling himself the Riddler attempted to rob a bank vault, and\n</p>\n<p>\n	a miscreant known as Penguin generally made a nuisance of himself in the downtown area.\n</p>\n<p>\n	Happily, each incident was staged: an attempt on the part the charity Make-a-Wish to\n</p>\n<p>\n	give five-year-old Miles Scott, who is recovering from leukaemia, a memorable day assisting his favourite superhero.\n</p>\n<p>\n	<img src=\"https://pbs.twimg.com/media/BZIoetTCMAE0XR0.jpg\" style=\"width: 350px;\">\n</p>\n<p>\n	<span style=\"color: rgb(119, 119, 119); font-style: italic;\">             Damsel played the role quite well...she waited a long time </span>\n</p>\n<blockquote>\n	<br />\n</blockquote>\n<p>\n	<img src=\"https://pbs.twimg.com/media/BZIvBPsCYAEO3Lr.jpg\" style=\"width: 350px;\">\n</p>\n<p>\n	<span style=\"color: rgb(119, 119, 119); font-style: italic;\">            Hot off the presses! </span><a href=\"https://twitter.com/search?q=%23sfbatkid&amp;src=hash\" style=\"font-style: italic;\">#sfbatkid</a><span style=\"color: rgb(119, 119, 119); font-style: italic;\"> catches riddler robbing Gotham bank</span>\n</p>\n',NULL,2,'2013-11-17 01:50:35','2013-11-17 01:50:35','High school students loans money with their parents bank account','http://rhsroyals.nbed.nb.ca/sites/rhsroyals.nbed.nb.ca/files/pixture_reloaded_logo.png'),(8,'Batkid saves San Francisco as charity makes a wish come true','\n<p>\n	<em>Thousands volunteer to help five-year-old leukaemia patient battle The Riddler and Penguin on a day of realised dreams</em>\n</p>\n<p>\n	<em><br />\n	</em>\n</p>\n	<img src=\"http://static.guim.co.uk/sys-images/Guardian/Pix/pictures/2013/11/15/1384546934303/bd2f4d1a-871e-4074-9dd2-4468cefb3a0f-460x276.jpeg\"><br />\n	<span style=\"color: rgb(119, 119, 119); font-style: italic;\">\n	Miles Scott, dressed as Batkid, right, runs with Batman after saving<br />\n	a damsel in distress in San Francisco. Photograph: Jeff Chiu/AP<br />\n	</span>\n</br>\n<p>\n	San Francisco was beset by a wave of crime on Friday, as a woman was taken hostage\n</p>\n<p>\n	and tied to cable car tracks, a criminal calling himself the Riddler attempted to rob a bank vault, and\n</p>\n<p>\n	a miscreant known as Penguin generally made a nuisance of himself in the downtown area.\n</p>\n<p>\n	Happily, each incident was staged: an attempt on the part the charity Make-a-Wish to\n</p>\n<p>\n	give five-year-old Miles Scott, who is recovering from leukaemia, a memorable day assisting his favourite superhero.\n</p>\n<p>\n	<img src=\"https://pbs.twimg.com/media/BZIoetTCMAE0XR0.jpg\" style=\"width: 350px;\">\n</p>\n<p>\n	<span style=\"color: rgb(119, 119, 119); font-style: italic;\">             Damsel played the role quite well...she waited a long time </span>\n</p>\n<blockquote>\n	<br />\n</blockquote>\n<p>\n	<img src=\"https://pbs.twimg.com/media/BZIvBPsCYAEO3Lr.jpg\" style=\"width: 350px;\">\n</p>\n<p>\n	<span style=\"color: rgb(119, 119, 119); font-style: italic;\">            Hot off the presses! </span><a href=\"https://twitter.com/search?q=%23sfbatkid&amp;src=hash\" style=\"font-style: italic;\">#sfbatkid</a><span style=\"color: rgb(119, 119, 119); font-style: italic;\"> catches riddler robbing Gotham bank</span>\n</p>\n',NULL,2,'2013-11-17 01:50:35','2013-11-17 01:50:35','Thousands volunteer to help five-year-old leukaemia patient battle The Riddler and Penguin on a day of realised dreams','http://png-1.findicons.com/files/icons/1293/the_batman_vol_1/128/batman.png');
+/*!40000 ALTER TABLE "articles" ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table "categories"
+--
+
+DROP TABLE IF EXISTS "categories";
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE "categories" (
+  "id" int(11) NOT NULL,
+  "title" varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  "created_at" datetime NOT NULL,
+  "updated_at" datetime NOT NULL,
+  "icon" varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY ("id")
+);
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table "categories"
+--
+
+LOCK TABLES "categories" WRITE;
+/*!40000 ALTER TABLE "categories" DISABLE KEYS */;
+INSERT INTO "categories" VALUES (1,'Heart Warming','2013-11-17 01:50:34','2013-11-17 01:50:34','/assets/batkid.png'),(2,'The World Is A Dark Place','2013-11-17 01:50:35','2013-11-17 01:50:35','/assets/a-deeper-look.png'),(3,'Satirical Political News','2013-11-17 01:50:35','2013-11-17 01:50:35','/assets/satirical-political-news.png'),(4,'Motivational','2013-11-17 01:50:35','2013-11-17 01:50:35','/assets/dumbledore.jpeg');
+/*!40000 ALTER TABLE "categories" ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table "redactor_assets"
+--
+
+DROP TABLE IF EXISTS "redactor_assets";
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE "redactor_assets" (
+  "id" int(11) NOT NULL,
+  "user_id" int(11) DEFAULT NULL,
+  "data_file_name" varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  "data_content_type" varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  "data_file_size" int(11) DEFAULT NULL,
+  "assetable_id" int(11) DEFAULT NULL,
+  "assetable_type" varchar(30) COLLATE utf8_unicode_ci DEFAULT NULL,
+  "type" varchar(30) COLLATE utf8_unicode_ci DEFAULT NULL,
+  "width" int(11) DEFAULT NULL,
+  "height" int(11) DEFAULT NULL,
+  "created_at" datetime NOT NULL,
+  "updated_at" datetime NOT NULL,
+  PRIMARY KEY ("id"),
+  KEY "idx_redactor_assetable" ("assetable_type","assetable_id"),
+  KEY "idx_redactor_assetable_type" ("assetable_type","type","assetable_id")
+);
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table "redactor_assets"
+--
+
+LOCK TABLES "redactor_assets" WRITE;
+/*!40000 ALTER TABLE "redactor_assets" DISABLE KEYS */;
+/*!40000 ALTER TABLE "redactor_assets" ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table "schema_migrations"
+--
+
+DROP TABLE IF EXISTS "schema_migrations";
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE "schema_migrations" (
+  "version" varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  UNIQUE KEY "unique_schema_migrations" ("version")
+);
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table "schema_migrations"
+--
+
+LOCK TABLES "schema_migrations" WRITE;
+/*!40000 ALTER TABLE "schema_migrations" DISABLE KEYS */;
+INSERT INTO "schema_migrations" VALUES ('20131116144618'),('20131116185320'),('20131116185354'),('20131116185432'),('20131116204944'),('20131116222800'),('20131117014818'),('20131117023826');
+/*!40000 ALTER TABLE "schema_migrations" ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table "sub_categories"
+--
+
+DROP TABLE IF EXISTS "sub_categories";
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE "sub_categories" (
+  "id" int(11) NOT NULL,
+  "title" varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  "category_id" int(11) DEFAULT NULL,
+  "created_at" datetime NOT NULL,
+  "updated_at" datetime NOT NULL,
+  "icon" varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY ("id")
+);
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table "sub_categories"
+--
+
+LOCK TABLES "sub_categories" WRITE;
+/*!40000 ALTER TABLE "sub_categories" DISABLE KEYS */;
+INSERT INTO "sub_categories" VALUES (1,'Political',1,'2013-11-17 01:50:35','2013-11-17 01:50:35','/assets/a-deeper-look.png'),(2,'People Helping People',1,'2013-11-17 01:50:35','2013-11-17 01:50:35','/assets/batkid.png'),(3,'Dogs and Cats',1,'2013-11-17 01:50:35','2013-11-17 01:50:35','http://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Map_of_UTA_Flight_772.jpg/200px-Map_of_UTA_Flight_772.jpg'),(4,'Personal Growth',1,'2013-11-17 01:50:35','2013-11-17 01:50:35','http://rhsroyals.nbed.nb.ca/sites/rhsroyals.nbed.nb.ca/files/pixture_reloaded_logo.png'),(5,'Political',2,'2013-11-17 01:50:35','2013-11-17 01:50:35','/assets/a-deeper-look.png'),(6,'Scam',2,'2013-11-17 01:50:35','2013-11-17 01:50:35','http://rhsroyals.nbed.nb.ca/sites/rhsroyals.nbed.nb.ca/files/pixture_reloaded_logo.png'),(7,'Criminal',2,'2013-11-17 01:50:35','2013-11-17 01:50:35','http://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Map_of_UTA_Flight_772.jpg/200px-Map_of_UTA_Flight_772.jpg'),(8,'Teenagers',2,'2013-11-17 01:50:35','2013-11-17 01:50:35','http://rhsroyals.nbed.nb.ca/sites/rhsroyals.nbed.nb.ca/files/pixture_reloaded_logo.png'),(9,'Meme',3,'2013-11-17 01:50:35','2013-11-17 01:50:35','/assets/cat.jpg'),(10,'Dummy Gummy',3,'2013-11-17 01:50:35','2013-11-17 01:50:35','http://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Map_of_UTA_Flight_772.jpg/200px-Map_of_UTA_Flight_772.jpg'),(11,'Catzz',3,'2013-11-17 01:50:35','2013-11-17 01:50:35','http://rhsroyals.nbed.nb.ca/sites/rhsroyals.nbed.nb.ca/files/pixture_reloaded_logo.png'),(12,'Rick Roll',4,'2013-11-17 01:50:35','2013-11-17 01:50:35','http://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Map_of_UTA_Flight_772.jpg/200px-Map_of_UTA_Flight_772.jpg'),(13,'Trolololol',4,'2013-11-17 01:50:35','2013-11-17 01:50:35','http://rhsroyals.nbed.nb.ca/sites/rhsroyals.nbed.nb.ca/files/pixture_reloaded_logo.png');
+/*!40000 ALTER TABLE "sub_categories" ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2013-11-19  0:24:15
