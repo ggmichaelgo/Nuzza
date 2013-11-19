@@ -1,0 +1,27 @@
+<%= form_for @article, :html => { :class => 'form-horizontal' } do |f| %>
+  <div class="control-group">
+    <div class="controls">
+      <%= f.text_field :title, :class => 'text_field', :placeholder => 'Title', :style=>'width: 98.3%', :required => true %>
+    </div>
+  </div>
+  <div class="control-group">
+    <div class="controls">
+      <div class="redactor_box">
+        <%= f.text_area :content, placeholder: "Content goes here", :class => "redactor", :required => true %>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-actions">
+    <%= f.submit nil, :class => 'btn btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                journals_path, :class => 'btn' %>
+  </div>
+<% end %>
+
+
+<script type="text/javascript">
+  $(function(){
+    $('.redactor').redactor();
+  })
+</script>

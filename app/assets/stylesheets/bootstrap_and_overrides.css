@@ -1,0 +1,113 @@
+/*
+=require twitter-bootstrap-static/bootstrap
+
+Use Font Awesome icons (default)
+To use Glyphicons sprites instead of Font Awesome, replace with "require twitter-bootstrap-static/sprites"
+=require twitter-bootstrap-static/fontawesome
+*/
+
+.brand, .navbar .brand
+{
+	font-family: 'LeckerliOne-Regular';
+	font-size: 43px;
+	color: white;
+}
+
+.brand.big
+{
+	position: fixed;
+	right: 15px;
+	bottom: 30px;
+	margin-left: 2px;
+	font-size: 38px;
+	color: rgb(200,200,200);
+}
+
+.navbar
+{
+	width: 80%;
+	position: absolute;
+	top: 50px;
+	z-index: 1;
+	left:0;
+	right:0;
+	margin: 0 auto;
+}
+
+.navbar-inner
+{
+	padding: 10px 26px 10px 26px;
+}
+
+.carousel
+{
+	position: absolute;
+	top: 50%;
+	margin-top: -221px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+.carousel-control
+{
+	opacity: 0;
+}
+
+.carousel-control.left
+{
+	opacity: 1;
+	font-size: 18px;
+	display: block;
+	background-color: rgba(0,0,0,0.8);
+	border-color: rgba(200,200,200, 0.8);
+	border-radius: 0;
+	width: 80px;
+	height: 30px;
+	line-height: 30px;
+	top: 20%;
+	left: 5%;
+}
+
+.carousel .item h2
+{
+	color: #EEEEEE;
+	margin-left: 50px;
+}
+
+.container.nav-collapse .search
+{
+	margin: 3px 0px;
+}
+
+.icon-search
+{
+	font-size: 20px;
+	margin-right: 10px;
+	position: relative;
+	top: 3px;
+}
+
+.social
+{
+	text-align: right;
+	position: relative;
+	top: -5px;
+}
+
+.social img
+{
+	margin-top: 10px;
+	width: 45px;
+	height: 45px;
+}
+
+.sp_favicon
+{
+	background-image: url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yB/r/Xo2O9__RZZk.png);
+	background-size: auto;
+	background-repeat: no-repeat;
+	display: inline-block;
+	height: 14px;
+	width: 14px;
+}

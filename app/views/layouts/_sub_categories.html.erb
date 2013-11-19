@@ -1,0 +1,15 @@
+
+<div class="item">
+	<a class="left carousel-control" href="#myCarousel" data-slide="prev">‹ Back</a>
+	<div class='zone'>
+		<div class='container category_list' style='text-align: center;'>
+			<h2 style='text-align:left'>What are you feeling like?</h2>
+			<% @category.sub_categories.each do |sub| %>
+			<div class='subcategory' data-id='<%= sub.id %>'>
+				<img src="<%= sub.icon %>" class="img-circle">
+				<p><%= sub.title %></p>
+			</div>
+			<% end %>
+		</div>
+	</div>
+</div>

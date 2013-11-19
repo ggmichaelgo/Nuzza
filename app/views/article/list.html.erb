@@ -1,0 +1,49 @@
+<% while @articles.length > 0 %>
+	<div class='row'>
+	<% (0...2).each do %>
+			<div class='span6'>
+				<% article = @articles.pop %>
+				<div class='article-item' onclick='load_article(this)' data-id='<%= article.id %>'>
+					<img class='icon' src="<%= article.icon %>">
+					<h2><%= article.title %></h2>
+					<p><%= article.summary %></p>
+
+					<% if article.id == 8 %>
+					<div class='social'>
+						<small style='position: relative;top: 8px;'>
+							<i class="img sp_favicon sx_favicon_fav" style="top: 0px;"></i>
+							Corina Stiles, Maxime Santarre, and 3 others shared
+						</small>
+						<br>
+						<img src="/assets/fb_0.jpg" class="img-circle">
+						<img src="/assets/fb_1.jpg" class="img-circle">
+						<img src="/assets/fb_2.jpg" class="img-circle">
+					</div>
+					<% elsif article.id == 2 %>
+					<div class='social'>
+						<small style='position: relative;top: 8px;'>
+							<i class="img sp_favicon sx_favicon_fav" style="top: 0px;"></i>
+							Corina Stiles and Adam MacDonald shared
+						</small>
+						<br>
+						<img src="/assets/fb_0.jpg" class="img-circle">
+						<img src="/assets/fb_3.jpg" class="img-circle">
+					</div>
+					<% else %>
+					<div class='social'>
+						<small style='position: relative;top: 8px;'>
+							<i class="img sp_favicon sx_favicon_fav" style="top: 0px;"></i>
+							Corina Stiles and Adam MacDonald shared
+						</small>
+						<br>
+						<img src="/assets/fb_0.jpg" class="img-circle">
+						<img src="/assets/fb_3.jpg" class="img-circle">
+					</div>
+					<% end %>
+				</div>
+			</div>
+			<% break if @articles.length == 0 %>
+		<% end %>
+	</div>
+	<% break if @articles.length == 0 %>
+<% end %>

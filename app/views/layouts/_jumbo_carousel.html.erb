@@ -1,0 +1,23 @@
+<div id="myCarousel" class="carousel slide">
+
+	<div class="carousel-inner">
+		<div class="item active">
+			<div class='zone'>
+				<div class='container category_list' style='text-align: center;'>
+					<h2 style='text-align:left'>What are you feeling like?</h2>
+					<% list = Category.first(4).each do |category| %>
+						<div class='category' data-id='<%= category.id %>'>
+							<img src="<%= category.icon %>" class="img-circle">
+							<p><%= category.title %></p>
+						</div>
+					<% end %>
+				</div>
+			</div>
+		</div>
+		<div class="item"></div>
+	</div>
+	<div style='display: none'>
+		<a class="left carousel-control" href="#myCarousel" data-slide="prev">‹ Back</a>
+		<a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+	</div>
+</div>

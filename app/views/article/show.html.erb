@@ -1,0 +1,19 @@
+<div class='article span9'>
+	<h2><%= @article.title %></h2>
+	<small style='margin-left:30px'>written by <b>Dan Donovan&nbsp;</b></small>
+	<small style='float: right'><%= @article.created_at.strftime("%d %b. %Y") %></small>
+	<div class='article-content'>
+		<%= @article.content.html_safe %>
+		<br>
+		<div class='social'>
+			<small style='position: relative;top: 8px;'>
+				<i class="img sp_favicon sx_favicon_fav" style="top: 0px;"></i>
+				Corina Stiles, Maxime Santarre, and 3 others shared
+			</small>
+			<br>
+			<img src="/assets/fb_0.jpg" class="img-circle">
+			<img src="/assets/fb_1.jpg" class="img-circle">
+			<img src="/assets/fb_2.jpg" class="img-circle">
+		</div>
+	</div>
+</div>

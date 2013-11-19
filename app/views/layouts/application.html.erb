@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= content_for?(:title) ? yield(:title) : "Nuuz" %></title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag "application", :media => "all" %>
+    <%= favicon_link_tag 'favicon.ico' %>
+
+    <%= javascript_include_tag "application" %>
+  </head>
+  <body>
+    <%= render 'layouts/navigation' %>
+    <% if current_page?(:controller => 'article', :action => 'show') || current_page?(:controller => 'article', :action => 'list') ||
+     current_page?(:controller => 'article', :action => 'new') %>
+    <% else %>
+    <%= render 'layouts/jumbo_carousel' %>
+    <% end %>
+    <div class="container">
+        <div class="row" style='margin-top: 140px;'>
+          <div class="span12">
+            <%= yield %>
+          </div>
+        </div>
+    </div>
+
+    <a href="/" class='big brand'>Nuuz</a>
+  </body>
+</html>
