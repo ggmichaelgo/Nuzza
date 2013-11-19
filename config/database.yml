@@ -1,19 +1,19 @@
 development:
-  adapter: postgresql
+  adapter: mysql2
   encoding: unicode
   database: nuuz_development
   pool: 5
   username: nuuz
   password:
 test:
-  adapter: postgresql
+  adapter: mysql2
   encoding: unicode
   database: nuuz_test
   pool: 5
   username: nuuz
   password:
 production:
-  adapter: postgresql
+  adapter: mysql2
   encoding: unicode
   database: nuuz_production
   pool: 5
